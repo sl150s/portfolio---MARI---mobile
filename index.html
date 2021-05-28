@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>뮤지컬 마리퀴리</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    
+    
+    <!--플러그인 스와이프-->
+    <link rel="stylesheet" href="css/swiper.css">
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/swiper.js"></script>
+    <script type="text/javascript">
+    $(function () {
+
+       var mySwiper1 = new Swiper ('.visual', {
+         loop: true,
+         pagination: '.visual_navi', 
+         grabCursor: true, 
+         autoplay: 3000, 
+         effect: 'slide', 
+
+         //이전 다음 버튼
+         nextButton: '.swiper-button-next',
+         prevButton: '.swiper-button-prev',
+       });
+
+    });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="header_wrap">
+                <h1 class="logo">
+                    <a href="index.html">마리퀴리</a>
+                </h1>
+                <div class="menu_btn">
+                    <button type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="character.html">등장인물</a>
+                    </li>
+                    <li>
+                        <a href="info.html">뮤지컬 소개</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">갤러리</a>
+                    </li>
+                    <li>
+                        <a href="map.html">오시는 길</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav_bg"></div>
+        </header>
+        <article>
+            <h1 class="sr-only">전체 본문</h1>
+            <section class="visual">
+                <h1 class="sr-only">비쥬얼</h1>
+                <div class="swiper-wrapper">
+                    <div class="visual_box_1 swiper-slide">
+                        <img src="image/visual_1.jpg" alt="마리퀴리 비쥬얼 이미지1">
+                        <p>예측할 수 없고 알려지지 않은 무언가에 온 맘이 들끓어</p>
+                    </div>
+                    <div class="visual_box_2 swiper-slide">
+                        <img src="image/visual_2.jpg" alt="마리퀴리 비쥬얼 이미지2">
+                        <p>퀴리라고 부를거야. 방사능의 단위, 퀴리.</p>
+                    </div>
+                    <div class="visual_box_3 swiper-slide">
+                        <img src="image/visual_3.jpg" alt="마리퀴리 비쥬얼 이미지3">
+                        <p>궁금하니까.<br>궁금한 걸 참을 수가 없어서요. 그런데 그걸 실험이라고, 그걸 과학이라고 그렇게 부르더군요. 그래서 합니다.</p>
+                    </div>
+                </div>
+                
+                <div class="visual_navi"></div>
+
+                <div class="swiper-button-prev swiper-button-white"></div>
+                <div class="swiper-button-next swiper-button-white"></div>
+            </section>
+            <section class="icon_menu">
+                <h1 class="sr-only">아이콘 메뉴</h1>
+                <ul>
+                    <li>
+                        <a href="character.html">
+                            <span class="material-icons">
+                                face
+                            </span>
+                            <strong>등장인물</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="info.html">
+                            <span class="material-icons">
+                                import_contacts
+                            </span>
+                            <strong>뮤지컬 소개</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">
+                            <span class="material-icons">
+                                collections
+                            </span>
+                            <strong>갤러리</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="map.html">
+                            <span class="material-icons">
+                                map
+                            </span>
+                            <strong>오시는 길</strong>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="notice">
+                <h1 class="sr-only">공지사항</h1>
+                <div class="notice_wrap">
+                    <dl>
+                        <dt class="notice_title">
+                            공지사항
+                        </dt>
+                        <dd>
+                            <ul class="notice_txt">
+                                <li>
+                                    <a href="#">휠체어석 안내</a>
+                                </li>
+                                <li>
+                                    <a href="">관람 연령 안내</a>
+                                </li>
+                                <li>
+                                    <a href="">티켓 수령 안내</a>
+                                </li>
+                                <li>
+                                    <a href="">공연 관람 안내</a>
+                                </li>
+                                <li>
+                                    <a href="">공연장 이용안내</a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </section>
+            <section class="event">
+                <h1>이벤트</h1>
+                <div class="event_wrap">
+                    <div class="event_btn">
+                        <button  class="active" type="button" aria-label="첫번째 이벤트 사진 버튼"></button>
+                        <button type="button" aria-label="두번째 이벤트 사진 버튼"></button>
+                        <button type="button" aria-label="세번째 이벤트 사진 버튼"></button>
+                    </div>
+                    <div class="event_banner">
+                        <ul class="clear">
+                           <li>
+                                <a href="#">
+                                    <img src="image/event_1.png" alt="엽서이벤트">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="image/event_2.png" alt="악보이벤트">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="image/event_3.png" alt="준비중인 이벤트">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="discount">
+                <h1>할인 정보</h1>
+                <div class="discount_tab">
+                    <ul class="discount_title">
+                        <li class="d_active">
+                            <button type="button">
+                                조기예매
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                재관람
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                라이브 제작공연
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                마티네
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                청소년
+                            </button>
+                        </li>
+                    </ul>
+                    <ul class="discount_txt">
+                        <li>
+                            <dl>
+                                <dt>할인율</dt>
+                                <dd>
+                                    15&#37;
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>매수</dt>
+                                <dd>1인 4매</dd>
+                            </dl>   
+                            <dl>
+                                <dt>상세 내용</dt>
+                                <dd>적용기간 &#58; 	9&#47;7 &#126; 9&#47;14 예매자에 한함</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>할인율</dt>
+                                <dd>
+                                    20&#37;
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>매수</dt>
+                                <dd>1인 1매</dd>
+                            </dl>   
+                            <dl>
+                                <dt>상세 내용</dt>
+                                <dd class="dis_detail">
+                                    뮤지컬 마리 퀴리 유료관람 티켓 실물 소지자 &#40; 2018년&#44; 2020년 시즌 유료 티켓 포함 &#41;
+                                    <ul>
+                                        <li>
+                                            유료티켓 1장당 1매까지 적용가능
+                                        </li>
+                                        <li>증빙 티켓 뒷면에 확인 도장이 날인됩니다.</li>
+                                        <li>날인된 티켓의 재사용은 불가합니다.</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>할인율</dt>
+                                <dd>
+                                    15&#37;
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>매수</dt>
+                                <dd>1인 1매</dd>
+                            </dl>   
+                            <dl>
+                                <dt>상세 내용</dt>
+                                <dd class="dis_detail">
+                                    라이브 주최 및 제작공연 유료티켓 실물 소지자
+                                    <ul>
+                                        <li>해외공연 포함</li>
+                                        <li>재관람 도장 날인된 티켓 재사용 불가</li>
+                                        <li>예매내역 확인 증빙 불가</li>
+                                        <li>증빙자료 미지참 시 차액지불</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>할인율</dt>
+                                <dd>
+                                    15&#37;
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>매수</dt>
+                                <dd>1인 2매</dd>
+                            </dl>   
+                            <dl>
+                                <dt>상세 내용</dt>
+                                <dd>뮤지컬 마리퀴리 평일 낮공연에 한함</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>할인율</dt>
+                                <dd>
+                                    15&#37;
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>매수</dt>
+                                <dd>1인 1매</dd>
+                            </dl>   
+                            <dl>
+                                <dt>상세 내용</dt>
+                                <dd class="dis_detail">
+                                    만 13세 이상&#126;만 24세 이하 청소년 본인에 한함<br>
+                                    &#40; 공연 관람일 기준 2007년&#126;1996년 출생자 &#41;
+                                    <ul>
+                                        <li>티켓 수령 시 수령자 본인의 생년월일이 기재되어 있는 증빙 자료</li>
+                                        <li>증빙자료 미지참 시 차액 지불</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="article_footer">
+                <div class="article_footer_link">
+                    <a href="#">이용약관</a>
+                    <a href="#">개인정보처리방침</a>
+                </div>
+                <div class="article_footer_inquiry">
+                    <dl>
+                        <dt>예매 관련 문의</dt>
+                        <dd>0000&#45;0000</dd>
+                        <dt>뮤지컬 정보 문의</dt>
+                        <dd>0000&#45;0000</dd>
+                    </dl>
+                </div>
+                <span class="copy">
+                    Copyright&copy;Maria Sklodowska&#45;Curie
+                </span>
+            </section>
+        </article>
+        <footer>
+            <ul class="footer_menu">
+                <li>
+                    <a href="index.html">
+                        <img src="image/home_btn.png" alt="메인 홈 버튼">
+                        <strong>홈</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="character.html">
+                        <img src="image/person_btn.png" alt="등장인물 버튼">
+                        <strong>등장인물</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="info.html">
+                        <img src="image/info_btn.png" alt="뮤지컬 소개 버튼">
+                        <strong>뮤지컬 소개</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="gallery.html">
+                        <img src="image/gallery_btn.png" alt="갤러리 버튼">
+                        <strong>갤러리</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="map.html">
+                        <img src="image/map_btn.png" alt="오시는 길 버튼">
+                        <strong>오시는길</strong>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        <!--스크립트-->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script src="js/index.js"></script>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

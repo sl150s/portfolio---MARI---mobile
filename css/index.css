@@ -1,0 +1,363 @@
+@import url(common.css);
+@import url(header_footer.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+
+
+/*article*/
+article {
+    background:url(../image/sub_bg.png) center center no-repeat;
+    background-size: cover;
+}
+
+/*_______________________visual*/
+
+.visual{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 50px auto 0;
+}
+.visual .swiper-slide img{
+    width: 100%;
+    max-width: 100%;
+}
+
+/*비쥬얼 글자*/
+.visual .swiper-slide p{
+    position: absolute;
+    word-break : keep-all;
+    color: rgba(255,255,255,0.8);
+    font-size: 17px;
+    font-family: 'Noto Serif KR', serif;
+    letter-spacing: -1px;
+}
+.visual_box_1 p{
+    top: 20px;
+    left: 50%;
+    margin-left: 30px;
+    width: 30vw;
+    text-align: right;
+}
+.visual_box_2 p{
+    top: 10px;
+    right: 50%;
+    margin-right: 20px;
+    width: 30vw;
+}
+.visual_box_3 p{
+    top: 10px;
+    right: 50%;
+    margin-right: 5px;
+    width: 35vw;
+    font-size: 15px;
+}
+
+
+/*비쥬얼 하단버튼*/
+.visual .visual_navi { 
+	position: absolute; 
+	left:0px; 
+	bottom:20px; 
+	text-align: center;  
+	z-index: 10; 
+} 
+.visual .visual_navi .swiper-pagination-bullet { /* 버튼모양설정 */
+	background-color:#fff;
+    opacity: 0.5;
+	width:10px; 
+	height:10px; 
+    border-radius: 50%;
+	margin-left:5px; 
+} 
+.visual .visual_navi .swiper-pagination-bullet-active{  /* 메뉴on 설정(현재위치활성화) */
+	opacity: 1;
+} 
+
+
+/*비쥬얼 좌우버튼 */
+.visual .swiper-button-prev,
+.visual .swiper-button-next{
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    width: 20px;
+    height: 30px;
+    margin-top: -22px;
+    z-index: 10;
+    cursor: pointer;
+    background-size: cover;
+}
+.visual .swiper-button-prev{left: 10px;}
+.visual .swiper-button-next{right: 10px;}
+
+
+
+
+
+
+
+/*_______________________icon_menu*/
+
+.icon_menu {
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+}
+.icon_menu ul {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+.icon_menu ul li {
+    width: 20%;
+    height: 100px;
+}
+.icon_menu ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.icon_menu ul li a span{font-size: 40px;}
+.icon_menu ul li a strong{
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*_______________________notice*/
+.notice{
+    width: 100%;
+    height: auto;
+    background-color: #e0eae8;
+    height: 40px;
+}
+.notice_wrap{
+    width: 90%;
+    margin: 0 auto;
+}
+.notice_wrap dl{
+    height: 40px;
+    display: flex;
+}
+.notice_title{
+    width: 26%;
+    height: 30px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0;
+    background-color: #fff;
+    border: 1px solid #c5d6d2;
+    border-radius: 3px;
+    font-weight: 500;
+    letter-spacing: -0.6px;
+    color: #273532;
+    margin-right: 5%;
+}
+.notice_wrap dl dd{
+    width: 65%;
+    height: 40px;
+    overflow: hidden;
+}
+.notice_txt li a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+/*_______________________event*/
+
+.event {
+    width: 90%;
+    margin: 40px auto 0;
+    overflow: hidden;
+    color: #fff;
+}
+.event h1 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+}
+.event_banner{
+    width: 100%;
+    height: auto;
+    background-color: #09201a;
+}
+.event_banner ul{
+    width: 460px;
+    margin: 0 auto;
+    height: 124px;
+    position: relative;
+}
+.event_banner ul li {
+    width: 100%;
+    position: absolute;
+}
+.event_banner ul li:nth-of-type(1){
+    display: block;
+}
+.event_banner ul li:nth-of-type(2),
+.event_banner ul li:nth-of-type(3){
+    display: none;
+}
+.event_banner ul li a img{
+    width: 100%;
+}
+
+
+/*이벤트 상단 버튼*/
+.event_btn button {
+    cursor: pointer;
+    background-color:#00291f;
+    width: 15px;
+    height: 15px;
+    margin-right: 1px;
+    border-radius: 3px;
+}
+.event_btn button.active{
+    background-color:  #e0eae8;
+    width: 23px;
+}
+
+
+
+
+
+
+/*_______________________discount*/
+.discount {
+    margin: 40px 0 50px;
+    color: #fff;
+}
+.discount h1{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+}
+.discount_tab {
+    width: 90%;
+    margin: 10px auto 0;
+}
+
+/*할인 정보 타이틀 탭 메뉴 */
+.discount_title{
+    display: flex;
+    justify-content: space-between;
+}
+.discount_title li {
+    width: 100%;
+    height: 44px;
+    word-break: keep-all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0eae8;
+    border: solid #94b4ac;
+    border-width: 1px 1px 0 0;
+    border-radius: 10px 10px 0 0 ;
+}
+.discount_title li:first-child{
+    border-width: 1px 1px 0 1px;
+}
+.discount_title li button {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -1px;
+    color: #4e7168;
+    cursor: pointer;
+}
+.discount_title li.d_active {
+    border: 0;
+    background-color: #00291f;
+}
+.discount_title li.d_active button{
+   color: #fff; 
+    font-weight: 400;
+}
+
+
+
+/*할인 정보 탭메뉴 내용*/
+.discount_txt {
+    width: 100%;
+    background-color: #00291f;
+    color: #fff;
+    padding: 24px 20px;
+    word-break: keep-all;
+}
+.discount_txt>li>dl {
+    display: flex;
+}
+.discount_txt>li>dl>dt {
+    margin: 0 5% 10px 0;
+    width: 30%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #05100d;
+    border-radius: 4px;
+    letter-spacing: 1.2px;
+    font-weight: 400;
+}
+.discount_txt>li>dl>dt:last-child{
+    margin-bottom: 0;
+}
+.discount_txt>li>dl>dd {
+    width: 65%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.discount_txt>li>dl:nth-child(1) dd{
+    font-size: 18px;
+    color: #a9a465;
+    font-weight: 400;
+}
+.discount_txt>li>dl>dd.dis_detail{
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.discount_txt>li>dl .dis_detail ul{
+    margin-top: 6px;
+}
+.discount_txt>li>dl .dis_detail ul li{
+    list-style: circle;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
